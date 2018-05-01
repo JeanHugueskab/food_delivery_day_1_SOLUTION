@@ -24,11 +24,7 @@ class Router
 
   def display_menu
     puts "###############################"
-    puts "###############################"
-    puts "##                           ##"
     puts "##      LE WAGON BISTRO.     ##"
-    puts "##                           ##"
-    puts "###############################"
     puts "###############################"
     puts "What do you want to do?"
     puts "1 - List all meals"

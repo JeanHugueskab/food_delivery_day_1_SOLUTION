@@ -19,7 +19,8 @@ class MealRepository
     save_to_csv
   end
 
-  def find(id) # this id come from the repo
+  def find(id)
+    # this id come from the repo
     # @meals.each do |meal|
     #   return meal if meal.id == id
     # end
@@ -41,7 +42,7 @@ class MealRepository
 
   def save_to_csv
     CSV.open(@csv_file, 'wb') do |csv|
-      csv << %i(id name price) # sets the headers
+      csv << %i[id name price] # sets the headers
       @meals.each do |meal|
         csv << [meal.id, meal.name, meal.price]
       end
